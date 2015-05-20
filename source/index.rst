@@ -1,22 +1,23 @@
-.. Neptune documentation master file, created by
-   sphinx-quickstart on Tue May 19 18:28:19 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Neptune Documentation
+=====================
 
-Welcome to Neptune's documentation!
-===================================
+Introduction
+============
 
-Contents:
+Welcome to the Neptune Documentation, the official documentation for the `Neptune <http://www.neptunepowered.org/>`__ project.
+
+.. warning::
+
+    Neptune is still in development. We hope to have development build available soon.
+
+Links
+=====
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
+    :titlesonly:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+-  `Neptune Homepage <http://www.neptunepowered.org>`__
+-  `Neptune Issue Tracker <https://github.com/NeptunePowered/SpongeAPI/issues>`__
+-  `Neptune Twitter <https://twitter.com/NeptunePowered>`__
+-  `Neptune GitHub <https://github.com/NeptunePowered>`__

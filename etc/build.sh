@@ -18,14 +18,13 @@ mkdir build
 cd build
 git init
 git remote add origin $DOCS_REPO
-git fetch
-git checkout gh-pages
+git checkout --orphan gh-pages
 
 # Build the docs
 sphinx-build -b html ../source .
 
 # Copy static files
-cp -R ./etc/static/. .
+cp -R ../etc/static/. .
 
 # If we're on the master branch, do deploy
 if [[ $TRAVIS_BRANCH = master ]]; then
