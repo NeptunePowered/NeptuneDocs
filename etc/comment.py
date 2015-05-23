@@ -15,9 +15,9 @@ def mk_comment(commit, comment, changes):
 pr = os.environ.get('TRAVIS_PULL_REQUEST')
 token = os.environ.get('ACCESS_TOKEN')
 
-rawgit = 'https://cdn.rawgit.com/LexBot/SpongeDocs'
+rawgit = 'https://cdn.rawgit.com/LexBot/NeptuneDocs'
 repo = 'https://api.github.com/repos/NeptunePowered/NeptuneDocs'
-pr_repo = 'https://api.github.com/repos/LexBot/SpongeDocs'
+pr_repo = 'https://api.github.com/repos/LexBot/NeptuneDocs'
 
 commit = requests.get('%s/branches/%s' % (pr_repo, pr), auth=('x-oauth-basic', token)).json()['commit']['sha'][:8]
 
