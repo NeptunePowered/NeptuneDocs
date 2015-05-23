@@ -20,3 +20,9 @@ git commit -q -m "Deploy $(date)"
 git push -q -f origin $branch
 echo "Done! Successfully published docs!"
 cd ../
+
+# Give time for GitHub API to catch up
+sleep 5
+
+# Make comment
+python ./etc/comment.py
