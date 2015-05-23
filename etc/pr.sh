@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 branch=${TRAVIS_PULL_REQUEST}
+echo "Deploying PR #$branch"
 
 # Deploy
 cd build
@@ -22,4 +23,4 @@ cd ../
 sleep 5
 
 # Make comment
-python ./etc/comment.py
+#python ./etc/comment.py
