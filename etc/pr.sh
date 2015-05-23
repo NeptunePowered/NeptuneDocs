@@ -4,7 +4,8 @@ branch=${TRAVIS_PULL_REQUEST}
 echo "Deploying PR #$branch"
 
 # Deploy
-cd build
+mkdir deploy
+cd deploy
 git init
 git remote add origin git@github.com:LexBot/NeptuneDocs.git
 if git ls-remote origin | grep -sw "$branch"; then
@@ -13,14 +14,9 @@ if git ls-remote origin | grep -sw "$branch"; then
 else
     git checkout --orphan $branch
 fi
+cp -R ../build/. .
 git add .
 git commit -q -m "Deploy $(date)"
 git push -q -f origin $branch
 echo "Done! Successfully published docs!"
 cd ../
-
-# Give time for GitHub API to catch up
-sleep 5
-
-# Make comment
-#python ./etc/comment.py
