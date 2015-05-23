@@ -13,7 +13,7 @@ def mk_comment(commit, comment, changes):
     return {'body': comment_tpl % (rawgit, commit, '\n'.join('- %s %s/%s/%s.html' % (change['status'], rawgit, commit, change['filename']) for change in changes), comment)}
 
 pr = os.environ.get('TRAVIS_PULL_REQUEST')
-token = os.environ.get('KEY_PASS')
+token = os.environ.get('ACCESS_TOKEN')
 
 rawgit = 'https://cdn.rawgit.com/LexBot/SpongeDocs'
 repo = 'https://api.github.com/repos/NeptunePowered/NeptuneDocs'
