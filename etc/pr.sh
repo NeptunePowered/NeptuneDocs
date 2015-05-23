@@ -14,7 +14,7 @@ else
 fi
 git add .
 git commit -q -m "Deploy $(date)"
-git push -q -f origin gh-pages
+git push -q -f origin $branch
 echo "Done! Successfully published docs!"
 cd ../
 
