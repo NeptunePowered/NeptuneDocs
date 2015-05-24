@@ -4,8 +4,11 @@ import json
 
 comment_tpl = """
 A preview for this pull request is available at %s/%s/index.html.
+
 Here are some links to the pages that were modified:
+
 %s
+
 _Since the preview frequently changes, please link to [this comment](%s), not to the direct url to the preview._
 """
 
