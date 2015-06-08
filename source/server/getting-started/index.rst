@@ -11,7 +11,7 @@ What implementation should I pick?
 There are currently three implementations:
 
 .. csv-table::
-:header: "Name", "Based on"
+   :header: "Name", "Based on"
 
    :doc: "NeptuneForge", "Mojang's Minecraft and Minecraft Forge"
    :doc: "NeptuneVanilla", "Mojang's Minecraft"
