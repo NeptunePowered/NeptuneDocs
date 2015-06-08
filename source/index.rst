@@ -8,7 +8,7 @@ Welcome to the Neptune Documentation, the official documentation for the `Neptun
 
 .. warning::
 
-    Neptune is still in development. We hope to have development build available soon.
+    Neptune is still in development. We hope to have development builds available, when Neptune is stabler.
 
 Contents
 ========

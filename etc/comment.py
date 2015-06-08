@@ -4,8 +4,11 @@ import json
 
 comment_tpl = """
 A preview for this pull request is available at %s/%s/index.html.
+
 Here are some links to the pages that were modified:
+
 %s
+
 _Since the preview frequently changes, please link to [this comment](%s), not to the direct url to the preview._
 """
 
@@ -13,11 +16,11 @@ def mk_comment(commit, comment, changes):
     return {'body': comment_tpl % (rawgit, commit, '\n'.join('- %s %s/%s/%s.html' % (change['status'], rawgit, commit, change['filename']) for change in changes), comment)}
 
 pr = os.environ.get('TRAVIS_PULL_REQUEST')
-token = os.environ.get('KEY_PASS')
+token = os.environ.get('ACCESS_TOKEN')
 
-rawgit = 'https://cdn.rawgit.com/LexBot/SpongeDocs'
+rawgit = 'https://cdn.rawgit.com/LexBot/NeptuneDocs'
 repo = 'https://api.github.com/repos/NeptunePowered/NeptuneDocs'
-pr_repo = 'https://api.github.com/repos/LexBot/SpongeDocs'
+pr_repo = 'https://api.github.com/repos/LexBot/NeptuneDocs'
 
 commit = requests.get('%s/branches/%s' % (pr_repo, pr), auth=('x-oauth-basic', token)).json()['commit']['sha'][:8]
 

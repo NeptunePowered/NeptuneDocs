@@ -8,7 +8,18 @@ Overview
 What implementation should I pick?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Neptune provides two implementations of CanaryLib: NeptuneVanilla and NeptuneForge.
-The decision really comes up to if you want to have client mods and/or Forge support.
-If you want client mods or Forge support: pick NeptuneForge.
-If you do not need any of that: pick NeptuneVanilla.
+There are currently three implementations:
+
+.. csv-table::
+:header: "Name", "Based on"
+
+   :doc: "NeptuneForge", "Mojang's Minecraft and Minecraft Forge"
+   :doc: "NeptuneVanilla", "Mojang's Minecraft"
+
+The first option (NeptuneForge) allows the use of client mods that make use of Minecraft Forge.
+
+It is often said that NeptuneVanilla is pointless when NeptuneForge exists, however there are many reasons to use NeptuneVanilla:
+
+    * Performance concerns, as other options may use less memory and CPU to do the same task
+
+All of our official implementations are built upon Minecraft and therefor share much code, and are usually both implemented to the same point.
