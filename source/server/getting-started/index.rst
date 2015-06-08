@@ -13,8 +13,8 @@ There are currently three implementations:
 .. csv-table::
    :header: "Name", "Based on"
 
-   :doc: "NeptuneForge", "Mojang's Minecraft and Minecraft Forge"
-   :doc: "NeptuneVanilla", "Mojang's Minecraft"
+   "NeptuneForge", "Mojang's Minecraft and Minecraft Forge"
+   "NeptuneVanilla", "Mojang's Minecraft"
 
 The first option (NeptuneForge) allows the use of client mods that make use of Minecraft Forge.
 
